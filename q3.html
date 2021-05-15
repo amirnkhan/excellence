@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Question 3.</h2>
+    <p id="demo"></p>
+
+<script>
+var array = [1,2,3,4,12,47,49,88,88,89,94,96,101];
+function q1(array){
+  let arr = [];
+  for (i = 0; i < array.length; i++){
+    if (array[i] === array[i-1]){
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+document.getElementById("demo").innerHTML = q1(array);
+</script>
+
+</body>
+</html>
+
+
